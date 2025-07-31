@@ -1,3 +1,8 @@
+---
+import NavBarImage from '../assets/navBarLogo.png'
+import { Image } from 'astro:assets'
+---
+
 <!--<div class="flex px-[4%] py-4 justify-between items-center">-->
 <!--  <div class="text-xl leading-none">Northview Robotics</div>-->
 <!--  <div class="flex items-center gap-6">-->
@@ -9,12 +14,13 @@
 <!--  </div>-->
 <!--</div>-->
 
-<div class="box-border flex px-4 md:px-8 py-4 justify-between items-center  md:bg-white md:text-black overflow-x-hidden">
-  <div class="text-xl leading-none">Northview Robotics</div>
+<div class="box-border flex px-4 md:px-8 py-4 justify-between items-center  md:bg-white md:text-black overflow-x-hidden font-manrope">
+  <Image src={NavBarImage} alt="Team 6632 website logo, phoenix icon" class="scale-90 md:scale-75 lg:scale-90 mt-1 mr-4 md:mr-1 lg:mr-4"/>
+  <div class="font-medium text-xl leading-none">Northview Robotics</div>
   <div id="hamburger" class="hover:cursor-pointer ml-auto md:hidden">
     Hamburger
   </div>
-  <div class="hidden md:flex items-center gap-6 ml-auto">
+  <div class="hidden md:flex items-center gap-3 lg:gap-6 ml-auto">
     <a href="/"><h5>Home</h5></a>
     <a class="whitespace-nowrap" href=""><h5>About us</h5></a>
     <a class="whitespace-nowrap" href=""><h5>Team Resources</h5></a>
