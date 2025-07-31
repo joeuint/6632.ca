@@ -3,6 +3,7 @@ import "../styles/globals.css"
 import NavBar from "../components/navbar.astro"
 import { Image } from 'astro:assets'
 import headerImage from '../assets/header.png'
+import sponsorSectionImage from '../assets/working.png'
 ---
 
 <html lang="en">
@@ -14,12 +15,6 @@ import headerImage from '../assets/header.png'
 		<title>Astro</title>
 
   <script src="../scripts/router.js"/>
-<style>
-@theme {
-  --font-manrope: 'Manrope', 'sans-serif';
-}
-</style>
-
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
  <link href="https://fonts.googleapis.com/css2?family=Manrope:wght@200..800&display=swap" rel="stylesheet" />
@@ -27,11 +22,11 @@ import headerImage from '../assets/header.png'
 	<body class="box-border">
     <NavBar />
 
-<div class="px-4 flex flex-col">
+<div class="px-2 md:px-4 flex flex-col">
     <!--Hero Section-->
 <div class="md:items-stretch md:h-[80vh] flex w-full  gap-4 pt-5 flex-col md:flex-row">
-  <div class="md:w-[100vw] md:px-8 md:pt-20 flex flex-col px-4 py-14 rounded-2xl md:rounded-[60px] items-center justify-center text-white gap-6 bg-[#101B64] h-full">
-    <div class="font-[Manrope] text-5xl text-center">
+  <div class="font-[Manrope] md:w-[100vw] md:px-8 md:pt-20 flex flex-col px-4 py-14 rounded-2xl md:rounded-[60px] items-center justify-center text-white gap-6 bg-[#101B64] h-full">
+    <div class="text-4xl md:text-5xl text-center">
       Team 6632 is a FIRST® robotics team from Toronto, Ontario.
     </div>
     <div class="font-poppins text-xl text-center">
@@ -49,30 +44,62 @@ import headerImage from '../assets/header.png'
   </div>
 
     <!--Quick Description MOBILE -->
-    <div class="flex flex-col gap-4 md:hidden">
+    <div class="font-[Manrope] flex flex-col gap-2 md:hidden">
       <div class="flex">
         <div class="flex flex-col">
-          <div class="font-extrabold font-2xl">1567</div>
-          <div class="font-xl text-[#6D6D6D]">Founded in</div>
+          <div class="font-extrabold">1567</div>
+              <div class="mb-[-0.25rem] font-xl text-[#6D6D6D]">Founded in</div>
         </div>
        </div>
-      <div class="text-2xl font-[Manrope]">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Ut et massa mi. Aliquam in hendrerit urna. Pellentesque sit amet sapien fringilla, mattis ligula consectetur, ultrices mauris. Maecenas vitae mattis tellus. Nullam quis imperdiet augue. Vestibulum auctor ornare leo, non suscipit magna interdum eu. Curabitur pellentesque nibh nibh, at maximus ante fermentum sit amet. Pellentesque commodo lacus at sodales sodales. Quisque sagittis orci ut diam condimentum, vel euismod erat placerat. In iaculis arcu eros, eget tempus orci facilisis id.</div>
-      <button onclick="navigateTo(about)" class="w-full rounded-full px-6 py-1.5 border-solid border-[#6D6D6D] border-2">Learn More</button>
+      <div class="text-2xl">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Ut et massa mi. Aliquam in hendrerit urna. Pellentesque sit amet sapien fringilla, mattis ligula consectetur, ultrices mauris. Maecenas vitae mattis tellus. Nullam quis imperdiet augue. Vestibulum auctor ornare leo, non suscipit magna interdum eu. Curabitur pellentesque nibh nibh, at maximus ante fermentum sit amet. Pellentesque commodo lacus at sodales sodales. Quisque sagittis orci ut diam condimentum, vel euismod erat placerat. In iaculis arcu eros, eget tempus orci facilisis id.</div>
+      <button onclick="navigateTo(about)" class="mt-1 w-full rounded-full px-6 py-1.5 border-solid border-[#6D6D6D] border-2 text-xl">Learn More</button>
     </div>
 </div>
     
 
     <!--Quick Description DESKTOP -->
-    <div class="md:flex flex-col gap-2 hidden md:visible">
+    <div class="md:flex flex-col gap-5 hidden md:visible">
       <div class="font-[Manrope] text-2xl">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Ut et massa mi. Aliquam in hendrerit urna. Pellentesque sit amet sapien fringilla, mattis ligula consectetur, ultrices mauris. Maecenas vitae mattis tellus. Nullam quis imperdiet augue. Vestibulum auctor ornare leo, non suscipit magna interdum eu. Curabitur pellentesque nibh nibh, at maximus ante fermentum sit amet. Pellentesque commodo lacus at sodales sodales. Quisque sagittis orci ut diam condimentum, vel euismod erat placerat. In iaculis arcu eros, eget tempus orci facilisis id.</div>
       <div class="flex justify-between items-center">
+          <div class="flex">
         <div class="flex flex-col ">
           <div class="font-extrabold font-[Manrope] text-2xl">1567</div>
-          <div class="text-xl font-[Manrope] text-[#6D6D6D]">Founded in</div>
+          <div class="mt-[-4px] text-xl font-[Manrope] text-[#6D6D6D]">Founded in</div>
         </div>
-
+        <div class="flex flex-col ">
+          <div class="font-extrabold font-[Manrope] text-2xl">1567</div>
+          <div class="mt-[-4px] text-xl font-[Manrope] text-[#6D6D6D]">Founded in</div>
+        </div>
+        <div class="flex flex-col ">
+          <div class="font-extrabold font-[Manrope] text-2xl">1567</div>
+          <div class="mt-[-4px] text-xl font-[Manrope] text-[#6D6D6D]">Founded in</div>
+        </div>
+          </div>
+<div class="flex items-center gap-2 py-1.5 px-6 border-2 border-[#6D6D6D] rounded-full text-xl font-[Manrope] font-medium">
+  <span class="align-middle">Learn more</span>
+  <svg class="align-middle h-[1.8em] w-auto" viewBox="0 0 24 24" fill="none"
+    xmlns="http://www.w3.org/2000/svg">
+    <path d="M16.0044 9.414L7.3974 18.021L5.9834 16.607L14.5904 8H7.0034V6H18.0034V17H16.0034L16.0044 9.414Z"
+      fill="black" />
+  </svg>
+</div>
       </div>
     </div>
+
+
+      <!-- Sponsor section -->
+      <div class="flex flex-col-reverse md:flex-row justify-between font-[Manrope]">
+        <div class="flex flex-col md:justify-between">
+        <div class="flex flex-col">
+          <div class="flex flex-col gap-2 md:gap-4">
+          <div class="text-4xl">Sponsoring our team</div>
+          <div class="font-poppins text-xl/[36px]">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Ut et massa mi. Aliquam in hendrerit urna. Pellentesque sit amet sapien fringilla, mattis ligula consectetur, ultrices mauris. Maecenas vitae mattis tellus. Nullam quis imperdiet augue. </div>
+          </div>
+        </div>
+          <div class="w-full md:w-auto text-white underline bg-[#101B64] px-5 py-2.5 text-center font-medium mt-4 md:mt-0">Join our expanding list of sponsors</div>
+        </div>
+        <Image src={sponsorSectionImage} alt="People huddled, working on an FRC robot machine"/>
+      </div
 </div>
 	</body>
 </html>
