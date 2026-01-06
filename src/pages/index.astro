@@ -9,7 +9,7 @@ import MainLayout from '../layouts/MainLayout.astro';
 <MainLayout>
   <div class="px-1 md:px-4 lg:px-8 flex flex-col">
     <!--Hero Section-->
-    <div class="md:items-stretch md:h-[80vh] max-h-[600px] flex w-full  gap-4 pt-5 flex-col md:flex-row">
+    <div class="md:items-stretch md:h-[80vh] md:max-h-[600px] flex w-full  gap-4 pt-5 flex-col md:flex-row">
       <div class="font-manrope md:w-[100vw] px-4 md:px-8 lg:px-32 md:pt-20 flex flex-col py-14 rounded-2xl md:rounded-[60px] items-center justify-center text-white gap-6 bg-[#101B64] h-full">
         <div class="text-4xl md:text-5xl text-center">
           Team 6632 is a FIRST® robotics team from Toronto, Ontario.
@@ -21,7 +21,7 @@ import MainLayout from '../layouts/MainLayout.astro';
       
       <div class="w-full min-h-full md:h-full rounded-2xl md:rounded-[60px] overflow-hidden">
         <Image
-        class="w-full h-full object-cover object-center rounded-2xl md:rounded-[60px]"
+        class="w-full h-auto md:h-full md:object-cover object-center rounded-2xl md:rounded-[60px]"
         loading="lazy"
         src={headerImage}
         alt="Northview Robotics team members cheering"
