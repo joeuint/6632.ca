@@ -1,0 +1,19 @@
+p {
+    @apply text-lg
+}
+
+h2 {
+    @apply text-2xl mt-8 mb-4 font-semibold text-[#101864];
+}
+
+ul {
+    @apply list-disc text-lg
+}
+
+a {
+    @apply underline text-[#101B64] transition-colors font-medium
+}
+
+a:hover {
+    @apply underline text-[#1C30B8] font-medium
+}
