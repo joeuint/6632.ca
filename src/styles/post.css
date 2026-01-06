@@ -7,7 +7,7 @@ h2 {
 }
 
 ul {
-    @apply list-disc text-lg
+    @apply list-disc text-lg px-8
 }
 
 a {
